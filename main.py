@@ -22,7 +22,7 @@ def save_remaining_lines(file_path, remaining_lines):
             file.write(line + '\n')
 
 if __name__ == "__main__":
-    file_path = 'database.txt'
+    file_path = 'fortune.txt'
     random_lines, remaining_lines = get_random_lines_from_file(file_path, num_lines=1)
 
     if random_lines:
@@ -31,4 +31,4 @@ if __name__ == "__main__":
 
         save_remaining_lines(file_path, remaining_lines)
     else:
-        print("missing")
+        print("missing") # ensure that the lines are not missing, recheck fortune.txt
